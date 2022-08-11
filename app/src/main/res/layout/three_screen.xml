@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScreenThree">
+
+    <TextView
+        android:id="@+id/tvS3NameAndNum"
+        android:layout_width="369dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="20dp"
+        android:text="1. Lesson Name and Number"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvS3Length"
+        android:layout_width="230dp"
+        android:layout_height="22dp"
+        android:text="Length: 1 hours and 20 minutes"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvS3NameAndNum"
+        app:layout_constraintStart_toStartOf="@+id/tvS3NameAndNum"
+        app:layout_constraintTop_toBottomOf="@+id/tvS3NameAndNum" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="320dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFEDED"
+        android:text="Lesson Description"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvS3Length"
+        app:layout_constraintStart_toStartOf="@+id/tvS3Length"
+        app:layout_constraintTop_toBottomOf="@+id/tvS3Length" />
+
+    <Button
+        android:id="@+id/btnWatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FFA0A0"
+        android:text="Watch Lesson"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@+id/tvDescription"
+        app:layout_constraintStart_toStartOf="@+id/tvDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Take notes:"
+        app:layout_constraintStart_toStartOf="@+id/tvDescription"
+        app:layout_constraintTop_toBottomOf="@+id/btnWatch" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#FFA0A0"
+        android:text="Save notes"
+        app:layout_constraintEnd_toEndOf="@+id/etNotes"
+        app:layout_constraintStart_toStartOf="@+id/etNotes"
+        app:layout_constraintTop_toBottomOf="@+id/etNotes" />
+
+    <EditText
+        android:id="@+id/etNotes"
+        android:layout_width="320dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFEDED"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvDescription"
+        app:layout_constraintStart_toStartOf="@+id/tvDescription"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#5DF30D"
+        android:text="mark complete"
+        app:layout_constraintEnd_toEndOf="@+id/btnSave"
+        app:layout_constraintStart_toStartOf="@+id/btnSave"
+        app:layout_constraintTop_toBottomOf="@+id/btnSave" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
